@@ -1,0 +1,80 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1761346631.json",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items":{
+    "$id": "#root/items",
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "idUnidade",
+      "mesReferencia",
+      "consumoKwh",
+      "mediaSeisMeses",
+      "diferencaPercentual",
+      "dataAlerta"
+    ],
+    "properties": {
+      "idUnidade": {
+        "$id": "#root/items/idUnidade",
+        "title": "Idunidade",
+        "type": "integer",
+        "examples": [
+          5
+        ],
+        "default": 0
+      },
+      "mesReferencia": {
+        "$id": "#root/items/mesReferencia",
+        "title": "Mesreferencia",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "2025-05-01"
+        ],
+        "pattern": "^.*$"
+      },
+      "consumoKwh": {
+        "$id": "#root/items/consumoKwh",
+        "title": "Consumokwh",
+        "type": "integer",
+        "examples": [
+          320
+        ],
+        "default": 0
+      },
+      "mediaSeisMeses": {
+        "$id": "#root/items/mediaSeisMeses",
+        "title": "Mediaseismeses",
+        "type": "integer",
+        "examples": [
+          250
+        ],
+        "default": 0
+      },
+      "diferencaPercentual": {
+        "$id": "#root/items/diferencaPercentual",
+        "title": "Diferencapercentual",
+        "type": "integer",
+        "examples": [
+          28
+        ],
+        "default": 0
+      },
+      "dataAlerta": {
+        "$id": "#root/items/dataAlerta",
+        "title": "Dataalerta",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "2025-05-20"
+        ],
+        "pattern": "^.*$"
+      }
+    }
+  }
+
+}

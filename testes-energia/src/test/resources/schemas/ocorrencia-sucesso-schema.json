@@ -1,0 +1,245 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1761346319.json",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "id",
+    "unidade",
+    "dataOcorrencia",
+    "tipoOcorrencia",
+    "descricao",
+    "resolvida"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#root/id",
+      "title": "Id",
+      "type": "integer",
+      "examples": [
+        21
+      ],
+      "default": 0
+    },
+    "unidade": {
+      "$id": "#root/unidade",
+      "title": "Unidade",
+      "type": "object",
+      "required": [
+        "id",
+        "nome",
+        "endereco",
+        "tipo",
+        "contrato"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#root/unidade/id",
+          "title": "Id",
+          "type": "integer",
+          "examples": [
+            6
+          ],
+          "default": 0
+        },
+        "nome": {
+          "$id": "#root/unidade/nome",
+          "title": "Nome",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Casa Maria"
+          ],
+          "pattern": "^.*$"
+        },
+        "endereco": {
+          "$id": "#root/unidade/endereco",
+          "title": "Endereco",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Rua das Palmeiras, 50"
+          ],
+          "pattern": "^.*$"
+        },
+        "tipo": {
+          "$id": "#root/unidade/tipo",
+          "title": "Tipo",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Residencial"
+          ],
+          "pattern": "^.*$"
+        },
+        "contrato": {
+          "$id": "#root/unidade/contrato",
+          "title": "Contrato",
+          "type": "object",
+          "required": [
+            "id",
+            "cliente",
+            "dataInicio",
+            "dataFim",
+            "statusContrato",
+            "tipoTarifa"
+          ],
+          "properties": {
+            "id": {
+              "$id": "#root/unidade/contrato/id",
+              "title": "Id",
+              "type": "integer",
+              "examples": [
+                6
+              ],
+              "default": 0
+            },
+            "cliente": {
+              "$id": "#root/unidade/contrato/cliente",
+              "title": "Cliente",
+              "type": "object",
+              "required": [
+                "id",
+                "nome",
+                "documento",
+                "endereco",
+                "tipoCliente"
+              ],
+              "properties": {
+                "id": {
+                  "$id": "#root/unidade/contrato/cliente/id",
+                  "title": "Id",
+                  "type": "integer",
+                  "examples": [
+                    7
+                  ],
+                  "default": 0
+                },
+                "nome": {
+                  "$id": "#root/unidade/contrato/cliente/nome",
+                  "title": "Nome",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "Empresa XPTO"
+                  ],
+                  "pattern": "^.*$"
+                },
+                "documento": {
+                  "$id": "#root/unidade/contrato/cliente/documento",
+                  "title": "Documento",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "22222222000199"
+                  ],
+                  "pattern": "^.*$"
+                },
+                "endereco": {
+                  "$id": "#root/unidade/contrato/cliente/endereco",
+                  "title": "Endereco",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "Av. Paulista, 2000"
+                  ],
+                  "pattern": "^.*$"
+                },
+                "tipoCliente": {
+                  "$id": "#root/unidade/contrato/cliente/tipoCliente",
+                  "title": "Tipocliente",
+                  "type": "string",
+                  "default": "",
+                  "examples": [
+                    "Comercial"
+                  ],
+                  "pattern": "^.*$"
+                }
+              }
+            }
+          ,
+            "dataInicio": {
+              "$id": "#root/unidade/contrato/dataInicio",
+              "title": "Datainicio",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "2022-10-01"
+              ],
+              "pattern": "^.*$"
+            },
+            "dataFim": {
+              "$id": "#root/unidade/contrato/dataFim",
+              "title": "Datafim",
+              "type": "null",
+              "default": null
+            },
+            "statusContrato": {
+              "$id": "#root/unidade/contrato/statusContrato",
+              "title": "Statuscontrato",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Inativo"
+              ],
+              "pattern": "^.*$"
+            },
+            "tipoTarifa": {
+              "$id": "#root/unidade/contrato/tipoTarifa",
+              "title": "Tipotarifa",
+              "type": "string",
+              "default": "",
+              "examples": [
+                "Azul"
+              ],
+              "pattern": "^.*$"
+            }
+          }
+        }
+
+      }
+    }
+  ,
+    "dataOcorrencia": {
+      "$id": "#root/dataOcorrencia",
+      "title": "Dataocorrencia",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2025-10-24"
+      ],
+      "pattern": "^.*$"
+    },
+    "tipoOcorrencia": {
+      "$id": "#root/tipoOcorrencia",
+      "title": "Tipoocorrencia",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Falha Elétrica"
+      ],
+      "pattern": "^.*$"
+    },
+    "descricao": {
+      "$id": "#root/descricao",
+      "title": "Descricao",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Oscilação de tensão detectada"
+      ],
+      "pattern": "^.*$"
+    },
+    "resolvida": {
+      "$id": "#root/resolvida",
+      "title": "Resolvida",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "N"
+      ],
+      "pattern": "^.*$"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1761345651.json",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items":{
+    "$id": "#root/items",
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "id",
+      "equipamento",
+      "dataManutencao",
+      "descricao",
+      "tipoManutencao",
+      "responsavel"
+    ],
+    "properties": {
+      "id": {
+        "$id": "#root/items/id",
+        "title": "Id",
+        "type": "integer",
+        "examples": [
+          21
+        ],
+        "default": 0
+      },
+      "equipamento": {
+        "$id": "#root/items/equipamento",
+        "title": "Equipamento",
+        "type": "object",
+        "required": [
+          "id",
+          "nome",
+          "tipo",
+          "fabricante"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#root/items/equipamento/id",
+            "title": "Id",
+            "type": "integer",
+            "examples": [
+              5
+            ],
+            "default": 0
+          },
+          "nome": {
+            "$id": "#root/items/equipamento/nome",
+            "title": "Nome",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Medidor Digital X"
+            ],
+            "pattern": "^.*$"
+          },
+          "tipo": {
+            "$id": "#root/items/equipamento/tipo",
+            "title": "Tipo",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Medidor"
+            ],
+            "pattern": "^.*$"
+          },
+          "fabricante": {
+            "$id": "#root/items/equipamento/fabricante",
+            "title": "Fabricante",
+            "type": "string",
+            "default": "",
+            "examples": [
+              "Siemens"
+            ],
+            "pattern": "^.*$"
+          }
+        }
+      }
+    ,
+      "dataManutencao": {
+        "$id": "#root/items/dataManutencao",
+        "title": "Datamanutencao",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "2025-10-24"
+        ],
+        "pattern": "^.*$"
+      },
+      "descricao": {
+        "$id": "#root/items/descricao",
+        "title": "Descricao",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "Limpeza de rotina dos painéis"
+        ],
+        "pattern": "^.*$"
+      },
+      "tipoManutencao": {
+        "$id": "#root/items/tipoManutencao",
+        "title": "Tipomanutencao",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "Preventiva"
+        ],
+        "pattern": "^.*$"
+      },
+      "responsavel": {
+        "$id": "#root/items/responsavel",
+        "title": "Responsavel",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "Técnico Pedro"
+        ],
+        "pattern": "^.*$"
+      }
+    }
+  }
+
+}

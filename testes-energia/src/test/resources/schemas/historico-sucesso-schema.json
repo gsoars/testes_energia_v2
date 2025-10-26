@@ -1,0 +1,59 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/object1761346142.json",
+  "title": "Root",
+  "type": "array",
+  "default": [],
+  "items":{
+    "$id": "#root/items",
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "idUnidade",
+      "mesReferencia",
+      "consumoKwh",
+      "valorPago"
+    ],
+    "properties": {
+      "idUnidade": {
+        "$id": "#root/items/idUnidade",
+        "title": "Idunidade",
+        "type": "integer",
+        "examples": [
+          5
+        ],
+        "default": 0
+      },
+      "mesReferencia": {
+        "$id": "#root/items/mesReferencia",
+        "title": "Mesreferencia",
+        "type": "string",
+        "default": "",
+        "examples": [
+          "2025-05-01"
+        ],
+        "pattern": "^.*$"
+      },
+      "consumoKwh": {
+        "$id": "#root/items/consumoKwh",
+        "title": "Consumokwh",
+        "type": "integer",
+        "examples": [
+          320
+        ],
+        "default": 0
+      },
+      "valorPago": {
+        "$id": "#root/items/valorPago",
+        "title": "Valorpago",
+        "type": "integer",
+        "examples": [
+          192
+        ],
+        "default": 0
+      }
+    }
+  }
+
+}
